@@ -32,7 +32,7 @@ public class MarketConnector implements IMarketConnector {
 
     private final IRedisSender redisSender;
 
-    @Scheduled(fixedDelay = 498)
+    @Scheduled(fixedDelay = 497)
     public void sendMockMessages() {
         redisSender.send("some message. now " + System.currentTimeMillis());
     }
